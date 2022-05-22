@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Age Calculator</title>
+</head>
+
+<body>
+    <main>
+        <div class="input-container">
+            <label for="">Give Your Birth year by month/day/year: </label>
+            <input id="birth-year" type="date" name="" id="">
+            <!-- <input id="birth-year" type="text" name="" id=""> -->
+            <label for="">Give today's date by month/day/year: </label>
+            <input id="current-date" type="date" name="" id="">
+            <!-- <input type="text" name="" id=""> -->
+            <button class="submit-btn" onclick="ageCalculate()">Submit</button>
+        </div>
+
+
+        <div id="show-age" class="showing-age">
+
+        </div>
+
+
+    </main>
+
+    <script>
+        function ageCalculate() {
+            const showAge = document.getElementById('show-age');
+            const birthYear = document.getElementById("birth-year").value.slice(0, 4);
+            console.log(birthYear);
+            const currentDate = document.getElementById('current-date').value.slice(0, 4);
+            console.log(currentDate);
+            const div = document.createElement('div');
+            div.innerHTML = `
+            <li> Your age is = ${currentDate-birthYear}</li>
+            `
+            showAge.appendChild(div)
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+.input-container{
+    text-align: center;
+    font-size: larger;
+    font-weight: 600;
+    background-color: skyblue;
+    margin-top: 10px;
+    padding: 30px;
+}
+.input-container input{
+    width: 200px;
+    height: 30px;
+}
+
+.showing-age{
+    text-align: center;
+    font-size: larger;
+    font-weight: 600;
+    background-color: skyblue;
+    padding: 10px;
+   
+}
+.submit-btn{
+    height: 30px;
+    width: 70px;
+    color: white;
+    background-color: blue;
+}
